@@ -1,0 +1,91 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html>
+<body>
+<h1>User Form</h1>
+<form action="action_page.php">
+first name:<span class="star">*</span><br> 
+  <input type="text" name="firstname" value="" placeholder="enter your name"<br>
+<br><br>
+Last name:<br>
+  <input type="text" name="lastname" value=""/>
+  <br><br>
+  <select name="names">
+  <option value="abhishek">abhishek</option>
+  <option value="bharath">bharath</option>
+  <option value="manoj">manoj</option>
+  <option value="venkatesh">venkatesh</option>
+  </select>
+  <br><br>
+  <textarea name="message" rows="5" cols="5"></textarea>
+  <br>
+  <input type="checkbox" name="gender" value=""> male
+  <input type="checkbox" name="gender" value=""> female
+  <input type="checkbox" name="gender" value=""> others
+  <br><br>
+  <input type="radio" name="subject" value="chemistry">chemistry<span class="star">*</span>
+  <input type="radio" name="subject" value="computer science">computer science
+  <br><br>
+  <input type="file" name="fileupload" accept=".jpg"/>
+  <br><br>
+  <input type="number" name="number"/>
+  <br>
+  <input type="date" name="date"/><br><br>
+  <fieldset>
+  <legend> personal information</legend>
+  <div>
+  <label for="fullname">First Name:</label>
+  <input required type="text" name="fullname" id="fullname" class="txt"/>
+  </div>
+  <div>
+  <label for="email">Email Address:</label><span class="star">*</span>
+  <input required type="text" name="email" id="email"/>
+  </div>
+  <div>
+  <label for="password1">password:</label> 
+  <input required type="password" name="password1" id="password1" class="txt"/><span class="instructions">Use 0-8 characters, at least one uppercase, one number and one special character.</span>
+  </div>
+  <div>
+  <label for="password2">cofirm password:</label>
+  <input type="password" name="password2" id="password2" class="txt"/>
+  
+  </div>
+  </fieldset>
+  <fieldset>
+  <legend> Adress details</legend>
+  <div>
+  <label for="adress2">adress:</label>
+  <input type="adress" name="adress2" id="adress" class="txt"/>
+  </div>
+  <div>
+  <label for="city">Town / City:</label>
+  <input type="text" name="city" id="city" class="txt" />
+  </div>
+  <div>
+  <label for="zipcode"> zip /postcode:</label>
+  <input type="text" name="zip" id="zip" pattern="[0-9]{6}" maxlength="6" />
+  </div>
+  </fieldset><br><br>
+  
+  <input type="button" value="send"/>
+  </form>
+  <br>
+  </hr>
+  <input list="test" name="browser">
+  <datalist id="test">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input required type="submit" name="submit" value="submit">
+  </body>
+  </html>
+  
+  
+  
+  
+  
+
+
